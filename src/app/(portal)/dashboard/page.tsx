@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
+import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
 import AIInsights from '@/components/ai/AIInsights';
 import './page.css';
 
@@ -18,7 +18,7 @@ export default function DashboardPage() {
             <div className="dashboard-header">
                 <div>
                     <h1 className="page-title">Financial Overview</h1>
-                    <p className="page-subtitle">Welcome back, here is what's happening today.</p>
+                    <p className="page-subtitle">Welcome back, here is what&apos;s happening today.</p>
                 </div>
                 <div className="date-filter glass-panel">
                     <span className="current-date">October 2026</span>
