@@ -151,14 +151,16 @@
 }
 
 .progress-bar-container {
+    position: absolute;
+    top: 10px;
+    /* Center of the 20px step-dot */
+    left: 20px;
+    right: 20px;
     height: 4px;
     background: var(--border-light);
     border-radius: var(--radius-full);
-    margin-top: -30px;
-    /* pull up behind dots */
-    margin-bottom: 20px;
-    position: relative;
     z-index: 1;
+    transform: translateY(-50%);
 }
 
 .progress-bar {

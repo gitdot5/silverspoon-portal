@@ -27,12 +27,12 @@ export default function StrategyPage() {
                     </div>
                     <div className="phase-progress">
                         <div className="progress-steps">
+                            <div className="progress-bar-container">
+                                <div className="progress-bar" style={{ width: '85%' }}></div>
+                            </div>
                             <div className="step completed"><div className="step-dot"></div><span>Analysis</span></div>
                             <div className="step completed"><div className="step-dot"></div><span>Strategy</span></div>
                             <div className="step active"><div className="step-dot"></div><span>Optimization</span></div>
-                        </div>
-                        <div className="progress-bar-container">
-                            <div className="progress-bar" style={{ width: '85%' }}></div>
                         </div>
                         <p className="phase-desc text-muted mt-4">
                             We are currently focusing on executing your action plan to minimize labor variance and negotiate vendor pricing for dairy products.
