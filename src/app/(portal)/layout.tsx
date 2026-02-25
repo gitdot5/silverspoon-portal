@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from '@/components/layout/Sidebar';
 import Header from '@/components/layout/Header';
-import AIAssistant from '@/components/ai/AIAssistant';
+
 import './layout.css';
 
 export default function PortalLayout({
@@ -18,7 +18,6 @@ export default function PortalLayout({
                     {children}
                 </main>
             </div>
-            <AIAssistant />
         </div>
     );
 }
