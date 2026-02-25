@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from '@/components/layout/Sidebar';
 import Header from '@/components/layout/Header';
-import { SidebarProvider } from '@/components/layout/SidebarProvider';
+import AIAssistant from '@/components/ai/AIAssistant';
 import './layout.css';
 
 export default function PortalLayout({
@@ -10,16 +10,15 @@ export default function PortalLayout({
     children: React.ReactNode;
 }) {
     return (
-        <SidebarProvider>
-            <div className="portal-layout">
-                <Sidebar />
-                <div className="portal-main">
-                    <Header />
-                    <main className="portal-content">
-                        {children}
-                    </main>
-                </div>
+        <div className="portal-layout">
+            <Sidebar />
+            <div className="portal-main">
+                <Header />
+                <main className="portal-content">
+                    {children}
+                </main>
             </div>
-        </SidebarProvider>
+            <AIAssistant />
+        </div>
     );
 }
