@@ -24,47 +24,49 @@ export default function AdminPage() {
                         </div>
                     </div>
 
-                    <table className="admin-table">
-                        <thead>
-                            <tr>
-                                <th>Restaurant Name</th>
-                                <th>Status</th>
-                                <th>Assigned Rep</th>
-                                <th>Last Login</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td className="font-medium">The Coastal Catch</td>
-                                <td><span className="status-badge active">Active</span></td>
-                                <td>Sarah Jenkins</td>
-                                <td className="text-muted">Today, 09:41 AM</td>
-                                <td><button className="text-btn">Manage</button></td>
-                            </tr>
-                            <tr>
-                                <td className="font-medium">Downtown Diner</td>
-                                <td><span className="status-badge pending">Onboarding</span></td>
-                                <td>Mark Stevenson</td>
-                                <td className="text-muted">Yesterday</td>
-                                <td><button className="text-btn">Manage</button></td>
-                            </tr>
-                            <tr>
-                                <td className="font-medium">Luna Pizzeria</td>
-                                <td><span className="status-badge active">Active</span></td>
-                                <td>Sarah Jenkins</td>
-                                <td className="text-muted">Oct 20, 2026</td>
-                                <td><button className="text-btn">Manage</button></td>
-                            </tr>
-                            <tr>
-                                <td className="font-medium">Oasis Lounge (Inactive)</td>
-                                <td><span className="status-badge inactive">Inactive</span></td>
-                                <td>Unassigned</td>
-                                <td className="text-muted">Sep 15, 2026</td>
-                                <td><button className="text-btn">Manage</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div className="table-responsive">
+                        <table className="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Restaurant Name</th>
+                                    <th>Status</th>
+                                    <th>Assigned Rep</th>
+                                    <th>Last Login</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="font-medium">The Coastal Catch</td>
+                                    <td><span className="status-badge active">Active</span></td>
+                                    <td>Sarah Jenkins</td>
+                                    <td className="text-muted">Today, 09:41 AM</td>
+                                    <td><button className="text-btn">Manage</button></td>
+                                </tr>
+                                <tr>
+                                    <td className="font-medium">Downtown Diner</td>
+                                    <td><span className="status-badge pending">Onboarding</span></td>
+                                    <td>Mark Stevenson</td>
+                                    <td className="text-muted">Yesterday</td>
+                                    <td><button className="text-btn">Manage</button></td>
+                                </tr>
+                                <tr>
+                                    <td className="font-medium">Luna Pizzeria</td>
+                                    <td><span className="status-badge active">Active</span></td>
+                                    <td>Sarah Jenkins</td>
+                                    <td className="text-muted">Oct 20, 2026</td>
+                                    <td><button className="text-btn">Manage</button></td>
+                                </tr>
+                                <tr>
+                                    <td className="font-medium">Oasis Lounge (Inactive)</td>
+                                    <td><span className="status-badge inactive">Inactive</span></td>
+                                    <td>Unassigned</td>
+                                    <td className="text-muted">Sep 15, 2026</td>
+                                    <td><button className="text-btn">Manage</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
                 <div className="admin-sidebar">

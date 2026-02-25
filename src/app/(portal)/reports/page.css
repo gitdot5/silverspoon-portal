@@ -71,6 +71,8 @@
 /* Table Styles */
 .table-responsive {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
 }
 
 .reports-table {
@@ -215,4 +217,18 @@
 
 .mt-4 {
     margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .reports-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .list-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
 }

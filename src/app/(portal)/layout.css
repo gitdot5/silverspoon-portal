@@ -37,3 +37,14 @@
         transform: translateY(0);
     }
 }
+
+@media (max-width: 768px) {
+    .portal-main {
+        padding: 0.5rem;
+    }
+
+    .portal-content {
+        padding: 1rem;
+        border-radius: var(--radius-md);
+    }
+}

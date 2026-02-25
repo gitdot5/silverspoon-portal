@@ -68,3 +68,33 @@
     justify-content: center;
     border: 2px solid var(--bg-primary);
 }
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 1rem;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .header-breadcrumbs {
+        display: none;
+    }
+}
