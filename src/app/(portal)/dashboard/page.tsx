@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
+import AIInsights from '@/components/ai/AIInsights';
 import './page.css';
 
 const data = [
@@ -21,7 +22,7 @@ export default function DashboardPage() {
                 </div>
                 <div className="date-filter glass-panel">
                     <span className="current-date">October 2026</span>
-                    <span className="dropdown-icon">▼</span>
+                    <span className="dropdown-icon">â¼</span>
                 </div>
             </div>
 
@@ -84,6 +85,8 @@ export default function DashboardPage() {
                     </div>
                 </div>
             </div>
+
+            <AIInsights />
         </div>
     );
 }
