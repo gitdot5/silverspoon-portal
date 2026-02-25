@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
-import AIInsights from '@/components/ai/AIInsights';
+
 import './page.css';
 
 const data = [
@@ -86,7 +86,7 @@ export default function DashboardPage() {
                 </div>
             </div>
 
-            <AIInsights />
+
         </div>
     );
 }
