@@ -1,0 +1,176 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.page-title {
+    margin-bottom: 0.25rem;
+}
+
+.page-subtitle {
+    color: var(--text-muted);
+}
+
+.date-filter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.date-filter:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--border-color);
+}
+
+.current-date {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.dropdown-icon {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* KPI Cards */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.kpi-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.kpi-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--border-color);
+}
+
+.kpi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.kpi-title {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.kpi-trend {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-full);
+}
+
+.kpi-trend.positive {
+    background: hsla(150, 80%, 45%, 0.1);
+    color: var(--success);
+}
+
+.kpi-trend.negative {
+    background: hsla(0, 80%, 60%, 0.1);
+    color: var(--error);
+}
+
+.kpi-value {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: var(--text-primary);
+}
+
+/* Eye-candy chart stubs */
+.kpi-chart-stub {
+    height: 48px;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: var(--radius-sm);
+    background-size: 20px 100%;
+}
+
+.revenue-stub {
+    background: linear-gradient(90deg, transparent 50%, var(--accent-glow) 50%);
+    border-bottom: 2px solid var(--accent-primary);
+}
+
+.cost-stub {
+    background: linear-gradient(90deg, transparent 50%, hsla(0, 80%, 60%, 0.1) 50%);
+    border-bottom: 2px solid var(--error);
+}
+
+.income-stub {
+    background: linear-gradient(90deg, transparent 50%, hsla(150, 80%, 45%, 0.1) 50%);
+    border-bottom: 2px solid var(--success);
+}
+
+/* Main Chart Area */
+.dashboard-main-charts {
+    margin-top: 1rem;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.chart-container {
+    padding: 1.5rem;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.placeholder-big-chart {
+    flex: 1;
+    position: relative;
+    border-left: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+    margin-top: 1rem;
+    /* Grid lines background pattern */
+    background-image: linear-gradient(var(--border-light) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border-light) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: -1px -1px;
+}
+
+/* Simulated line chart curves */
+.line-path-1,
+.line-path-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 100% 100%;
+    opacity: 0.8;
+}
+
+.line-path-1 {
+    background: linear-gradient(to top right, transparent 40%, var(--accent-glow) 41%, var(--accent-primary) 43%, transparent 45%);
+}
+
+.line-path-2 {
+    background: linear-gradient(to top right, transparent 60%, hsla(270, 80%, 65%, 0.2) 61%, var(--accent-secondary) 63%, transparent 65%);
+}

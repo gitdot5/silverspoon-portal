@@ -1,0 +1,218 @@
+.reports-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.reports-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.btn-icon {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.reports-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .reports-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Reports List Area */
+.reports-list {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.filter-group {
+    display: flex;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.25rem;
+    border-radius: var(--radius-md);
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+    color: var(--text-primary);
+}
+
+.filter-btn.active {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Table Styles */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.reports-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.reports-table th {
+    padding: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.reports-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 0.95rem;
+}
+
+.reports-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.reports-table tr:last-child td {
+    border-bottom: none;
+}
+
+.doc-name {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 500;
+}
+
+.doc-icon {
+    font-size: 1.25rem;
+}
+
+.doc-badge {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+}
+
+.type-report {
+    background: hsla(210, 100%, 65%, 0.1);
+    color: var(--accent-primary);
+}
+
+.type-invoice {
+    background: hsla(270, 80%, 65%, 0.1);
+    color: var(--accent-secondary);
+}
+
+.type-analysis {
+    background: hsla(150, 80%, 45%, 0.1);
+    color: var(--success);
+}
+
+.action-btn {
+    background: transparent;
+    border: 1px solid var(--border-light);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.action-btn:hover {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: white;
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+/* Sidebar Area */
+.reports-sidebar {
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.storage-info {
+    margin-top: 1rem;
+}
+
+.storage-bar {
+    height: 8px;
+    background: var(--border-light);
+    border-radius: var(--radius-full);
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.storage-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: var(--radius-full);
+}
+
+.storage-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+.upload-zone {
+    margin-top: 2rem;
+    border: 2px dashed var(--border-light);
+    border-radius: var(--radius-md);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.upload-zone:hover {
+    border-color: var(--accent-primary);
+    background: hsla(33, 89%, 52%, 0.05);
+}
+
+.upload-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
